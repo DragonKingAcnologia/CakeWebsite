@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <!-- swiper link  -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- cdn icon link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- custom css file  -->
+    <link rel="icon" type="image/png" href="images/icon.png">
+    <link rel="stylesheet" href="css/style2.css">
+
+</head>
+<body>
+
+    <!-- header section start here  -->
+    <header class="header">
+        <div class="logoContent">
+            <a href="#" class="logo"><img src="images/logo.png" alt=""></a>
+            <h1 class="logoName">Sweet Cake </h1>
+        </div>
+
+        <nav class="navbar">
+            <a href="index.html">home</a>
+            <a href="index.html#product">product</a>
+            <a href="index.html#blogs">blogs</a>
+            <a href="index.html#review">review</a>
+            <a href="index.html#contact">contact</a>
+            <a href="register.html">register</a>
+            <a href="order.html">order</a>
+            <a href="feature.html">feature</a>
+        </nav>
+
+        <div class="icon">
+            <i class="fas fa-search" id="search"></i>
+            <i class="fas fa-bars" id="menu-bar"></i>
+        </div>
+
+        <div class="search">
+            <input type="search" placeholder="search...">
+        </div>
+    </header>
+    <!-- header section end here  -->
+
+    <!-- home section start here  -->
+    <section class="home" id="home"></section>
+
+    <form class="form-container" id="registerform" method="post" action="http://mercury.swin.edu.au/it000000/cos10005/formtest.php">
+        <!-- Account Information fieldset -->
+        <fieldset>
+            <legend class="usin">Account Information</legend>
+            <div class="textinput">
+                <label for="uname">Your Name:</label>
+                <input id="uname" type="text" name="uname" />
+            </div>
+            <div class="textinput">
+                <label for="sid">User ID (Email):</label>
+                <input id="sid" type="text" name="id" />
+            </div>
+            <div class="textinput">
+                <label for="pwd1">Password:</label>
+                <input id="pwd1" type="password" name="pwd1" />
+            </div>
+            <div class="textinput">
+                <label for="pwd2">Retype Password:</label>
+                <input id="pwd2" type="password" name="pwd2" />
+            </div>
+        </fieldset>
+    
+        <!-- User Information fieldset -->
+        <fieldset>
+            <legend class="usin">User Information</legend>
+    
+            <!-- Gender radio buttons -->
+            <div class="radioinput">
+                <fieldset>
+                    <legend class="usin">Gender:</legend>
+                    <input class="form-gen" id="genm" type="radio" name="gender" value="Male" />
+                    <label for="genm">Male</label>
+                    <input class="form-gen" id="genf" type="radio" name="gender" value="Female" />
+                    <label for="genf">Female</label>
+                </fieldset>
+            </div>
+    
+            <!-- Favorite type of cake checkboxes -->
+            <div class="checkboxinput">
+                <fieldset>
+                    <legend>Your favorite type of cake:</legend>
+                    <input id="cake1" type="checkbox" name="cake[]" value="Gato cake" />
+                    <label for="cake1">Gato Cake</label>
+                    <input id="cake2" type="checkbox" name="cake[]" value="Tiramisu" />
+                    <label for="cake2">Tiramisu</label>
+                    <input id="cake3" type="checkbox" name="cake[]" value="Mousse cake" />
+                    <label for="cake3">Mousse Cake</label>
+                    <input id="cake4" type="checkbox" name="cake[]" value="Ice cream cake" />
+                    <label for="cake4">Ice Cream Cake</label>
+                </fieldset>
+            </div>
+    
+            <!-- Favorite cake at shop select -->
+            <div class="textinput">
+                <label for="fav-cake" class="usin">Your favorite Cake at shop:</label>
+                <select id="fav-cake" name="fav-cake">
+                    <option value="Chocolate cake">Chocolate cake</option>
+                    <option value="Tiramisu cake">Tiramisu Chocolate cake</option>
+                    <option value="Straw-Choco cake">Straw-Choco cake</option>
+                    <option value="Choco-Straw cake">Choco-Straw cake</option>
+                    <option value="Blueberry cake">Blueberry cake</option>
+                    <option value="Dragon fruit cake">Dragon fruit cake</option>
+                    <option value="Matcha cake">Matcha cake</option>
+                    <option value="Stawberry cake">Stawberry cake</option>
+                    <option value="Vanilla cake">Vanilla cake</option>
+                    <option value="Blue-Vanilla cake">Blue-Vanilla cake</option>
+                </select>
+            </div>
+        </fieldset>
+    
+        <!-- Submit and Reset buttons -->
+        <div class="buttoninput">
+            <input type="submit" value="REGISTER" />
+            <input type="reset" value="RESET"/>
+        </div>
+    </form>
+    
+    <footer class="footer" id="contact">
+        <div class="box-container">
+            <div class="mainBox">
+                <div class="content">
+                    <a href="#"><img src="images/logo.png" alt=""></a>
+                    <h1 class="logoName"> Sweet Cake </h1>
+                </div>
+
+                <p>Thank you for buying cakes at our shop</p>
+                <span class="smile-cake">&#x1F370;</span>
+
+            </div>
+            <div class="box">
+                <h3>Quick link</h3>
+                <a href="#"> <i class="fas fa-arrow-right"></i>Home</a>
+                <a href="#"> <i class="fas fa-arrow-right"></i>product</a>
+                <a href="#"> <i class="fas fa-arrow-right"></i>blogs</a>
+                <a href="#"> <i class="fas fa-arrow-right"></i>review</a>
+                <a href="#"> <i class="fas fa-arrow-right"></i>contact</a>
+
+            </div>
+            <div class="box">
+                <h3>Extra link</h3>
+                <a href="#"> <i class="fas fa-arrow-right"></i>Account info</a>
+                <a href="#"> <i class="fas fa-arrow-right"></i>order item</a>
+                <a href="#"> <i class="fas fa-arrow-right"></i>privacy policy</a>
+                <a href="#"> <i class="fas fa-arrow-right"></i>payment method</a>
+                <a href="#"> <i class="fas fa-arrow-right"></i>our  services</a>
+            </div>
+            <div class="box">
+                <h3>Contact Info</h3>
+                <a href="#"> <i class="fas fa-phone"></i>0387 148 555</a>
+                <a href="#"> <i class="fas fa-envelope"></i>sweetcake4u@gmail.com</a>
+                <a href="#"> <i class="fas fa-compass"></i>A35 Bach Dang, Ward 2, Tan Binh, Ho Chi Minh City</a>
+            </div>
+
+        </div>
+        <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+            <a href="#" class="fab fa-pinterest"></a>
+        </div>
+        <div class="credit">
+            <p>Assignment 2 - COS10005</p>
+        </div>
+    </footer>
+    <!-- swiper js link  -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
